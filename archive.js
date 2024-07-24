@@ -98,7 +98,6 @@ const imageTransitionRight = (imagePath) => {
 
 // const change credits
 const changeCredits = (parent) => {
-    console.log(parent.dataset)
     credit.children[0].innerHTML = parent.dataset.credit
     credit.children[0].href = parent.dataset.link
 }

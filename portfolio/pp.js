@@ -53,7 +53,6 @@ const activatejuxtaposeImage = () => {
     mainImage.style.display = 'none';
     index = srcImages.length - 1;
     images[index].scrollIntoView({ behavior: 'smooth' })
-    console.log(index)
 }
 
 juxtaToggle?.addEventListener('click', function (e) {
