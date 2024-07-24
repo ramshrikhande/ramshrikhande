@@ -46,7 +46,6 @@ imgBoxes.forEach((box) => {
         index = srcImages.indexOf(path)
         images[index].scrollIntoView({ behavior: 'smooth' })
     })
-
 })
 
 const activatejuxtaposeImage = () => {

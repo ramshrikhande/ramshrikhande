@@ -18,26 +18,28 @@
             <input type="checkbox" style="position: absolute; top: -1000px;" name="q" autofocus />
             <div style="position: relative; height: 100%; width: 100%;"
                 class="d-flex flex-column justify-content-center">
-                <div style="width: 100%; background: url('./assets/826.gif'); background-position: center; background-repeat: no-repeat;"
+                <div id="dialog-content" style="width: 100%; background: url('./assets/826.gif'); background-position: center; background-repeat: no-repeat;"
                     class="d-flex flex-grow-1 justify-content-center align-items-center">
+                    <button id="btn-left" type="button" class="btn btn-lg position-absolute start-0 carousel-btn px-4"><span><</span></button>
                     <div class="d-flex justify-content-center position-relative">
-                        <img class="img-fluid" id="main-image">
+                        <img class="img-fluid animation-main" id="main-image">
                         <div id="credit"
                             style="position: absolute; bottom: 0.5rem; color: whitesmoke; background-color: #202020b9;"
                             class="px-1"><a href="">credits</a></div>
                     </div>
+                    <button id="btn-right" type="button" class="btn btn-lg position-absolute end-0 carousel-btn px-4"><span>></span></button>
                 </div>
                 <div id="strip" class="my-2 container">
                     <div class="row g-1 flex-nowrap overflow-auto">
-                        <div class="col-3 col-md-2 strip-card" data-credit="John Doe" data-link="">
+                        <div class="col-3 col-md-2 strip-card" data-credit="John Doe" data-link="1">
                             <img class="img-fluid strip-card-img" loading="lazy"
                                 src="../archive_images/300/7DESATv2-2 copy.webp">
                         </div>
-                        <div class="col-3 col-md-2 strip-card" data-credit="John Doe" data-link="">
+                        <div class="col-3 col-md-2 strip-card" data-credit="John Doe2" data-link="2">
                             <img class="img-fluid strip-card-img" loading="lazy"
                                 src="../archive_images/300/720GT3_1 copy.webp">
                         </div>
-                        <div class="col-3 col-md-2 strip-card" data-credit="John Doe" data-link="">
+                        <div class="col-3 col-md-2 strip-card" data-credit="John Do3e" data-link="3">
                             <img class="img-fluid strip-card-img" loading="lazy"
                                 src="../archive_images/300/CGT_Green_5 copy.webp">
                         </div>
@@ -112,17 +114,17 @@
             <h2 class="mb-3">Archive</h2>
             <div class="row g-2" data-masonry='{"percentPosition": true }'>
                 <div class="archive-card-container col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="archive-card" data-credit="John Doe" data-link="">
+                    <div class="archive-card" data-credit="John Doe1" data-link="1">
                         <img src="./archive_images/500/7DESATv2-2 copy.webp" />
                     </div>
                 </div>
                 <div class="archive-card-container col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="archive-card" data-credit="John Doe" data-link="">
+                    <div class="archive-card" data-credit="John Doe2" data-link="2">
                         <img src="./archive_images/500/720GT3_1 copy.webp" />
                     </div>
                 </div>
                 <div class="archive-card-container col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="archive-card" data-credit="John Doe" data-link="">
+                    <div class="archive-card" data-credit="John Do3e" data-link="3">
                         <img src="./archive_images/500/CGT_Green_5 copy.webp" />
                     </div>
                 </div>

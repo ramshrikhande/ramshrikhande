@@ -573,6 +573,11 @@ dialog{
   border: none !important;
 }
 
+.carousel-btn:hover{
+  color: white !important;
+  background-color: #1d01011c ;
+}
+
 .animation-main{
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
