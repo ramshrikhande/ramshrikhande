@@ -11,11 +11,23 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link href="../style.css" rel="stylesheet" crossorigin="anonymous">
 </head>
+
 <body>
   <div id="navigation"></div>
   <div class="dialogwrapper d-flex flex-column justify-content-center">
     <div class="container dialog-content">
-      <img id="dialog-image" class="img-fluid" />
+      <button id="btn-left" type="button" class="btn btn-lg position-absolute start-0 carousel-btn px-4"><span><</span>
+        </button>
+          <img id="dialog-image" class="img-fluid animation-main" />
+          <div class="iframe-container">
+            <iframe
+              src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=2c6fd638-b3b6-11ee-9ddd-3f41531135b6"
+              title="Project Embed Content" class="embed-content" frameborder="0"
+              style="height:100%;left:0;position:absolute;top:0;width:100%;" allowfullscreen=""
+              sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms" loading="lazy"
+              fetchpriority="auto"></iframe>
+          </div>
+          <button id="btn-right" type="button" class="btn btn-lg position-absolute end-0 carousel-btn px-4"><span>></span></button>
     </div>
     <div id="strip" class="my-2 container">
       <div class="row g-1 flex-nowrap overflow-auto">
@@ -55,11 +67,16 @@
           <img class="img-fluid strip-card-img" loading="lazy"
             src="../assets/portfolio_images/pagani/thumbnail 300px/Side_Detail copy.webp">
         </div>
-       
-      
+
+
         <div class="col-3 col-md-2 strip-card">
           <img class="img-fluid strip-card-img" loading="lazy"
             src="../assets/portfolio_images/pagani/thumbnail 300px/breakdown.webp">
+        </div>
+
+        <div class="col-3 col-md-2 strip-card">
+          <img id="juxta-toggle-strip" class="img-fluid strip-card-img" loading="lazy"
+            src="../assets/portfolio_images/aston-martin/Thumbnail 300px/slider.webp">
         </div>
       </div>
     </div>
@@ -83,7 +100,7 @@
           <div class="col-sm-6 box" data-toggle="modal" data-target="#exampleModal">
             <img src="../assets/portfolio_images/pagani/thumbnail 500px/Side copy.webp">
           </div>
-          
+
           <div class="col-sm-6 box" data-toggle="modal" data-target="#exampleModal">
             <img src="../assets/portfolio_images/pagani/thumbnail 500px/Rear_Detail copy.webp">
           </div>
@@ -96,23 +113,33 @@
           <div class="col-sm-6 box" data-toggle="modal" data-target="#exampleModal">
             <img src="../assets/portfolio_images/pagani/thumbnail 500px/Side_Detail copy.webp">
           </div>
-          
+
           <div class="col-sm-6 box" data-toggle="modal" data-target="#exampleModal">
             <img src="../assets/portfolio_images/pagani/thumbnail 500px/breakdown.webp">
-        </div>
+          </div>
+
+          <div class="col-sm-6" id="juxta-toggle">
+            <img class="img-fluid " loading="lazy"
+              src="../assets/portfolio_images/aston-martin/Thumbnail 500px/slider.webp">
+          </div>
+
         </div>
       </div>
       <div class="col-md-6 d-flex justify-content-md-center">
         <div style="max-width: 50ch;">
           <div>
             <h1 class="text-uppercase">Pagani Codalunga</h1><br><br>
-            </div>
+          </div>
           <div class="mt-4">
             <h4 class="text-uppercase">Photography</h4>
-            <a href="https://www.instagram.com/deepspiritmedia/" target="_blank"><h5>Stéphane Abrantes </h5></a><br>
+            <a href="https://www.instagram.com/deepspiritmedia/" target="_blank">
+              <h5>Stéphane Abrantes </h5>
+            </a><br>
             <h4 class="text-uppercase">CGI</h4>
-            <a href="https://www.instagram.com/didsomeonesaycars/" target="_blank"><h5>Tanishq Chauhan </h5></a><br>
-                      <h4 class="text-uppercase">Scope of work</h4>
+            <a href="https://www.instagram.com/didsomeonesaycars/" target="_blank">
+              <h5>Tanishq Chauhan </h5>
+            </a><br>
+            <h4 class="text-uppercase">Scope of work</h4>
             <h5>Color Grading, Cleanup, CGI and Backplate Integration</h5><br>
             <h4 class="text-uppercase">Location</h4>
             <h5>Modena, Italy</h5>
