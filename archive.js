@@ -7,21 +7,18 @@ const btnLeft = document.querySelector('#btn-left');
 const btnRight = document.querySelector('#btn-right');
 const dialogContent = document.querySelector('#dialog-content');
 
-
 var swiper = new Swiper(".swiper", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     }
 })
-
 const swiperStripChange = () => {
     const idx = swiper.realIndex
     stripImages[idx].scrollIntoView({ behavior: 'smooth' });
 }
 
 swiper.on('slideChange', swiperStripChange)
-
 
 images.forEach((image, idx) => {
     image.dataset["idx"] = idx
