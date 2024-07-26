@@ -4,6 +4,9 @@ const images = document.querySelectorAll('.strip-card-img');
 const gallery = document.querySelector('.dialogwrapper');
 const iframeContainer = document.querySelector('.iframe-container');
 const dialogContent = document.querySelector('.dialog-content');
+const mainImages = document.querySelectorAll('.main-image')
+const leftBtn = document.querySelector('.swiper-button-prev')
+const rightBtn = document.querySelector('.swiper-button-next')
 
 var swiper = new Swiper(".swiper", {
     navigation: {
@@ -53,8 +56,23 @@ images.forEach((image, idx) => {
 })
 
 // To stop closing dialog on click inside dialog
-dialogContent.addEventListener('click', function (e) {
-    e.stopPropagation(); // prevent
+// dialogContent.addEventListener('click', function (e) {
+//     e.stopPropagation(); // prevent
+// })
+
+
+
+mainImages.forEach(image => {
+    image.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+    })
 })
 
+leftBtn.addEventListener('click', function (e) {
+    e.stopPropagation();
+})
 
+rightBtn.addEventListener('click', function (e) {
+    e.stopPropagation();
+})
