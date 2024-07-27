@@ -6,6 +6,9 @@ const strip = document.querySelector('#strip')
 const btnLeft = document.querySelector('#btn-left');
 const btnRight = document.querySelector('#btn-right');
 const dialogContent = document.querySelector('#dialog-content');
+const mainImages = document.querySelectorAll('.main-image')
+const leftBtn = document.querySelector('.swiper-button-prev')
+const rightBtn = document.querySelector('.swiper-button-next')
 
 var swiper = new Swiper(".swiper", {
     navigation: {
@@ -19,6 +22,7 @@ const swiperStripChange = () => {
 }
 
 swiper.on('slideChange', swiperStripChange)
+
 
 images.forEach((image, idx) => {
     image.dataset["idx"] = idx
@@ -59,6 +63,17 @@ credit.addEventListener('click', function (e) {
     e.stopPropagation();
 })
 
-dialogContent.addEventListener('click', function (e) {
-    e.stopPropagation(); // prevent
+mainImages.forEach(image => {
+    image.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+    })
+})
+
+leftBtn.addEventListener('click', function (e) {
+    e.stopPropagation();
+})
+
+rightBtn.addEventListener('click', function (e) {
+    e.stopPropagation();
 })
