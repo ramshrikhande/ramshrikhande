@@ -5,7 +5,7 @@ body {
   /* background-color: #303030; */
   background-image: url('/assets/HuracanFinal_copy\ \(1\).webp');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
   background-color: #303030;
   color: #ffffff;
   margin: 0;
@@ -104,7 +104,7 @@ body.modal-open {
 }
 
 .footer {
-  position: fixed;
+  position:relative;
   content: "";
   background-color: #000;
   left: 0;
